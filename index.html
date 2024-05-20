@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task" required>
+      <select id="todo-status" required>
+        <option value="RESOLVER YA">RESOLVER YA</option>
+        <option value="RESOLVER EN EL DÍA">RESOLVER EN EL DÍA</option>
+        <option value="RESOLVER CUANDO SE PUEDA">RESOLVER CUANDO SE PUEDA</option>
+        <option value="POSTPUESTA INDEFINIDA">POSTPUESTA INDEFINIDA</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+    <div class="todo-columns">
+      <div class="todo-column" id="resolve-now">
+        <h2>RESOLVER YA</h2>
+        <ul></ul>
+      </div>
+      <div class="todo-column" id="resolve-today">
+        <h2>RESOLVER EN EL DÍA</h2>
+        <ul></ul>
+      </div>
+      <div class="todo-column" id="resolve-later">
+        <h2>RESOLVER CUANDO SE PUEDA</h2>
+        <ul></ul>
+      </div>
+      <div class="todo-column" id="indefinitely-postponed">
+        <h2>POSTPUESTA INDEFINIDA</h2>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+ 
